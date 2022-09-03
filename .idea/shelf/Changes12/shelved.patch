@@ -1,0 +1,325 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1660425603888)
++++ b/.idea/modules.xml	(date 1660425603888)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Use cabeça programação.iml" filepath="$PROJECT_DIR$/.idea/Use cabeça programação.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/Use cabeça programação.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Use cabeça programação.iml b/.idea/Use cabeça programação.iml
+new file mode 100644
+--- /dev/null	(date 1660425603841)
++++ b/.idea/Use cabeça programação.iml	(date 1660425603841)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/venv" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: diretoriospart2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/diretoriospart2.py b/diretoriospart2.py
+new file mode 100644
+--- /dev/null	(date 1662122963927)
++++ b/diretoriospart2.py	(date 1662122963927)
+@@ -0,0 +1,4 @@
++import os
++
++os.makedirs('avô/pai/filho')
++os.makedirs('avó/mãe/filha')
+\ No newline at end of file
+Index: diretorio1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/diretorio1.py b/diretorio1.py
+new file mode 100644
+--- /dev/null	(date 1662121795037)
++++ b/diretorio1.py	(date 1662121795037)
+@@ -0,0 +1,3 @@
++import os
++
++print(os.getcwd())
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1660425603946)
++++ b/.idea/misc.xml	(date 1660425603946)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (Use cabeça programação)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: diretorio02.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/diretorio02.py b/diretorio02.py
+new file mode 100644
+--- /dev/null	(date 1662123438464)
++++ b/diretorio02.py	(date 1662123438464)
+@@ -0,0 +1,6 @@
++import os
++
++open('Moribundo.txt', 'w').close()
++os.mkdir('vago')
++os.rmdir('vago')
++os.remove('moribundo.txt')
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1660425604092)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1660425604092)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: confirmando.diretorio.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/confirmando.diretorio.py b/confirmando.diretorio.py
+new file mode 100644
+--- /dev/null	(date 1662123855284)
++++ b/confirmando.diretorio.py	(date 1662123855284)
+@@ -0,0 +1,8 @@
++import os
++import os.path
++
++for a in os.listdir("."):
++    if os.path.isdir(a):
++        print(f'{a}/')
++    elif os.path.isfile(a):
++        print(a)
+\ No newline at end of file
+Index: todas_informacoes.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/todas_informacoes.py b/todas_informacoes.py
+new file mode 100644
+--- /dev/null	(date 1662125105675)
++++ b/todas_informacoes.py	(date 1662125105675)
+@@ -0,0 +1,11 @@
++import os
++import os.path
++import time
++import sys
++
++nome = sys.argv[0]
++print(f'Nome: {nome}')
++print(f'Tamanho: {os.path.getsize(nome)}')
++print(f'Criado: {time.ctime(os.path.getctime(nome))}')
++print(f'Modificado: {time.ctime((os.path.getctime(nome)))}')
++print(f'Acessado: {time.ctime((os.path.getatime(nome)))}')
+\ No newline at end of file
+Index: teste.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/teste.py b/teste.py
+new file mode 100644
+--- /dev/null	(date 1662122312343)
++++ b/teste.py	(date 1662122312343)
+@@ -0,0 +1,10 @@
++import os
++
++os.chdir('a')
++print(os.getcwd())
++os.chdir("..")
++print(os.getcwd())
++os.chdir("b")
++print(os.getcwd())
++os.chdir('../c')
++print(os.getcwd())
+\ No newline at end of file
+Index: listadodiretorios.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/listadodiretorios.py b/listadodiretorios.py
+new file mode 100644
+--- /dev/null	(date 1662123553100)
++++ b/listadodiretorios.py	(date 1662123553100)
+@@ -0,0 +1,6 @@
++import os
++
++print(os.listdir('.'))
++print(os.listdir('avó'))
++print(os.listdir('avô/pai'))
++print(os.listdir('avó/mãe'))
+\ No newline at end of file
+Index: renomear.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/renomear.py b/renomear.py
+new file mode 100644
+--- /dev/null	(date 1662123307130)
++++ b/renomear.py	(date 1662123307130)
+@@ -0,0 +1,4 @@
++import os
++
++os.mkdir('Velho') #criando
++os.rename('Velho','novo')  #renomeando
+\ No newline at end of file
+Index: corrente.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/corrente.py b/corrente.py
+new file mode 100644
+--- /dev/null	(date 1662122666570)
++++ b/corrente.py	(date 1662122666570)
+@@ -0,0 +1,14 @@
++import os
++
++os.mkdir('d')
++os.mkdir('e')
++os.mkdir('f')
++print(os.getcwd())
++os.chdir('d')
++print(os.getcwd())
++os.chdir('../e')
++print(os.getcwd())
++os.chdir('..')
++print(os.getcwd())
++os.chdir('f')
++print(os.getcwd())
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+--- /dev/null	(date 1660425603728)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1660425603728)
+@@ -0,0 +1,61 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="PyArgumentListInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
++      <option name="ignoredErrors">
++        <list>
++          <option value="E111" />
++          <option value="E305" />
++          <option value="E303" />
++          <option value="E265" />
++          <option value="E262" />
++          <option value="E722" />
++          <option value="W292" />
++          <option value="E501" />
++          <option value="E731" />
++          <option value="E302" />
++          <option value="E261" />
++          <option value="E301" />
++          <option value="E225" />
++          <option value="W605" />
++          <option value="E712" />
++        </list>
++      </option>
++    </inspection_tool>
++    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
++      <option name="ignoredErrors">
++        <list>
++          <option value="N806" />
++          <option value="N802" />
++        </list>
++      </option>
++    </inspection_tool>
++    <inspection_tool class="PyPropertyDefinitionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyRedeclarationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyRedundantParenthesesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
++      <option name="ignoredNames">
++        <list>
++          <option value="id" />
++          <option value="exec" />
++        </list>
++      </option>
++    </inspection_tool>
++    <inspection_tool class="PyShadowingNamesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
++    <inspection_tool class="PySimplifyBooleanCheckInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyStatementEffectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="ignoredPackages">
++        <list>
++          <option value="pyspark-stubs==3.0.0.post3" />
++        </list>
++      </option>
++    </inspection_tool>
++    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyUnusedLocalInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
++  </profile>
++</component>
+\ No newline at end of file
+Index: confirmandodiretorio.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/confirmandodiretorio.py b/confirmandodiretorio.py
+new file mode 100644
+--- /dev/null	(date 1662124084710)
++++ b/confirmandodiretorio.py	(date 1662124084710)
+@@ -0,0 +1,6 @@
++import os
++
++if os.path.exists('z'):
++    print('O diretório já existe!')
++else:
++    print('O diretório não existe!')
+\ No newline at end of file

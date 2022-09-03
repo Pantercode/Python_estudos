@@ -1,0 +1,21 @@
+Index: Python_algortmos do basico_ao_Avançado/Adivinhando_um _erro.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Python_algortmos do basico_ao_Avançado/Adivinhando_um _erro.py b/Python_algortmos do basico_ao_Avançado/Adivinhando_um _erro.py
+new file mode 100644
+--- /dev/null	(date 1661969767131)
++++ b/Python_algortmos do basico_ao_Avançado/Adivinhando_um _erro.py	(date 1661969767131)
+@@ -0,0 +1,11 @@
++import random
++
++
++for t in range(3):
++    n = random.randint(1,10)
++    x = int(input('Escolha um numero entre 1 a 10: '))
++    if x == n:
++        print('Você acertou!')
++    else:
++        print('Você errou!')
++

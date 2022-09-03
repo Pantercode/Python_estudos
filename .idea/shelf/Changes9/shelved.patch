@@ -1,0 +1,15 @@
+Index: Python_algortmos do basico_ao_Avançado/adiconando.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Python_algortmos do basico_ao_Avançado/adiconando.py b/Python_algortmos do basico_ao_Avançado/adiconando.py
+new file mode 100644
+--- /dev/null	(date 1661520409094)
++++ b/Python_algortmos do basico_ao_Avançado/adiconando.py	(date 1661520409094)
+@@ -0,0 +1,4 @@
++casa = ['1, 5, 6, 7, 100, 40']
++casa.append(145)
++print(casa)
++print(len(casa))
+\ No newline at end of file

@@ -1,0 +1,15 @@
+Index: Python_algortmos do basico_ao_Avançado/abrindo_lendo_fechando.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Python_algortmos do basico_ao_Avançado/abrindo_lendo_fechando.py b/Python_algortmos do basico_ao_Avançado/abrindo_lendo_fechando.py
+new file mode 100644
+--- /dev/null	(date 1662037174802)
++++ b/Python_algortmos do basico_ao_Avançado/abrindo_lendo_fechando.py	(date 1662037174802)
+@@ -0,0 +1,4 @@
++arquivo = open("palavras.txt", "r")
++for linha in arquivo.readlines():
++    print(linha)
++arquivo.close()
+\ No newline at end of file

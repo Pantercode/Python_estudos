@@ -1,0 +1,22 @@
+Index: Python_algortmos do basico_ao_Avançado/add2.0.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Python_algortmos do basico_ao_Avançado/add2.0.py b/Python_algortmos do basico_ao_Avançado/add2.0.py
+new file mode 100644
+--- /dev/null	(date 1661521418281)
++++ b/Python_algortmos do basico_ao_Avançado/add2.0.py	(date 1661521418281)
+@@ -0,0 +1,11 @@
++lista = []
++while True:
++    num = int(input('Insira um número e 0 para sair do programa: '))
++    if num == 0:
++        break
++    lista.append(num)
++    x = 0
++    while x < len(lista):
++        print(lista[x])
++        x+=1
++print(f'Você digitou os números {lista}')
+\ No newline at end of file

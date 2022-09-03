@@ -1,0 +1,11 @@
+nome = 'Tayronne James'
+print(nome.startswith('Tayronne'))
+print(nome.endswith('Mattos'))
+print(nome.endswith('james'))
+print(nome.lower())
+print(nome.upper())
+print('James' in nome)
+print('Marcell' not in nome)
+print('James' in nome.capitalize())
+print('Tayronne' not in nome.lower())
+print('Tayronne' not in nome.upper())
